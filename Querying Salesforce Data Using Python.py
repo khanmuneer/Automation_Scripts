@@ -1,3 +1,6 @@
+# I found creating reports in Salesforce to be a lot harder than creating them in PowerBI /  Tableau / Excel. 
+# This script give an opportuinity to retrieve salesfroce data as a Pandas DataFrame and export it on excel.
+# We can use the excel as the source or the Python script itself in PowerBI to do data analysis. 
 
 # Import necessary packages
 from simple_salesforce import Salesforce, SalesforceLogin, SFType
