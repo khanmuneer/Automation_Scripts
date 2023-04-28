@@ -1,12 +1,12 @@
-#This script allows you to query your elasticsearch system and retrieve data for analysis. 
-#Kibana allows you to do analysis but the options are limited. 
-#With this you can create a DataFram and do a lot more data science, data enginerring and data analysis taks.
+# This script allows you to query your elasticsearch system and retrieve data for analysis. 
+# Kibana allows you to do analysis but the options are limited. 
+# With this you can create a DataFram and do a lot more data science, data enginerring and data analysis taks.
 
 
 import elasticsearch
 import pandas as pd
 
-#this is the query stored elsewhere. It contains a lucene script[https://www.elastic.co/guide/en/kibana/current/lucene-query.html] which is used to retireve data.
+# This is the query stored elsewhere. It contains a lucene script[https://www.elastic.co/guide/en/kibana/current/lucene-query.html] which is used to retireve data.
 from Search_Parameter_GTE import search_param
 
 
@@ -15,7 +15,7 @@ apikey = 'YOUR API KEY'
 uri = 'YOUR URI'
 es = elasticsearch.Elasticsearch([uri], api_key=apikey)
 
-#cat.indices --> Returns all indices that match a pattern
+# cat.indices --> Returns all indices that match a pattern
 indices = es.cat.indices(index="shrink-*.prod-filebeat-*", h="index").split()
 
 
