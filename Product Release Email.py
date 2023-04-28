@@ -1,3 +1,7 @@
+# Just before the annual product update our team wanted to reach out to select users and gather their feedback. 
+# I created this script to send out personalized email to multiple users with their activation codes and other details. 
+# We use Outlook at our org so this is specific to Outlook. 
+
 import win32com.client as win32
 import win32com.client as client
 import pandas as pd
